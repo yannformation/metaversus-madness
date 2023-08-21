@@ -2,12 +2,12 @@
 
 import { motion } from 'framer-motion';
 
-import styles from '../styles'
-import { navVariants } from '../utils/motion'
+import styles from '../styles';
+import { navVariants } from '../utils/motion';
 
 const Navbar = () => (
   <motion.nav
-    variants = {navVariants}
+    variants={navVariants}
     initial="hidden"
     whileInView="show"
     className={`${styles.xPaddings} py-8 relative`}
@@ -24,11 +24,7 @@ const Navbar = () => (
         METAVERSUS
       </h2>
 
-      <img
-        src='/menu.svg'
-        alt='menu hamburger'
-        className='w-[24px] h-[24px] object-contain '
-      />
+      <img src='/menu.svg'alt='menu hamburger' className='w-[24px] h-[24px] object-contain ' />
 
     </div>
    
